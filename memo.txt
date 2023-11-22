@@ -32,3 +32,11 @@ em태그 문장 내에서 특정 문맥의 강조할때 사용 (inline)
 sub, sup태그 아래첨자, 위첨자 (inline)
 
 s, del 교체 or 삭제 텍스트 (inline)
+
+blockquate태그 긴 인용문 (block)
+
+q 태그 짧은 인용문 (block)
+
+code (inline)
+
+address 태그 연락처, 회사소개, 고객센터 등  (block)

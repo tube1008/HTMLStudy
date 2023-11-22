@@ -51,4 +51,12 @@ git and github 순서
 * 강조의미를 가진 em, strong은 블록 내에서 강조처리를 할때 사용한다.
 * 제목 태그(h)안에는 em , strong 을 사용하지 않는다. (이미 강조하고 있어서 사용x)
 
-gkgkgkgkgkkgkg
+-----------------------------------------------
+
+# sub, sup 아래첨자, 위첨자(inline)
+# del 교체, 삭제 텍스트(inline)
+# blockquote 긴 인용문(block)
+# q 짧은 인용문(inline)
+# address 연락처 및 주소정보(block)
+    * address 자식, 자손으로는 inline 요소만 배치할수 있다.
+# hr  수평선 (block)
