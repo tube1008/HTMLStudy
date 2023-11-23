@@ -58,3 +58,20 @@ a 태그 링크태그 (block, inline)
     * 경로를 작성하는 파일 ((ex)html, css) 기준으로 연결하는 파일의 위치를 작성하는 것을 상대경로라 합니다.
     * ../ 상위경로?
     * ../../ 최상위 경로 올라가기 <-두번 올라가는 경우
+
+img 태그 (inline)
+src 이미지 경로 속성의 값으로는 상대 경로 방식으로 작성하는것을 권장합니다.
+
+    * 대체 텍스트 alt 속성을 필수로 작성해야합니다.
+    * 이미시 사용시 의미전달이 필요한 이미지와 아닌 이미지를 구분해서 사용해야 합니다.
+    * src 이미지 경로 속성의 값으로는 상대경로 방식으로 작성하는 것을 권장합니다.
+
+figure (block)
+ficaption (inline)
+    <h1>목요웹툰</h1>
+    <figure>
+        <img src="url" alt="">
+        <figcaption>신혼일기</figcaption>
+        <figcaption>자까</figcaption>
+    </figure>
+        
