@@ -10,8 +10,10 @@
 div > span
 
 div 안에 span 을 넣을수 있고
-
+ - 2개 이상의 인라인 or 블록 요소를 묶어주는 그룹 태그입니다.
+ 
 span 안에 div 는 넣을수 없다
+ - 2개 이상의 인라인 요소를 묶을 때 사용합니다.
 
 다양한 문서 태그 종류
 
@@ -75,3 +77,7 @@ ficaption (inline)
         <figcaption>자까</figcaption>
     </figure>
         
+시멘틱 태그의 각 의미와 활용
+1.<header><header>
+
+2.
