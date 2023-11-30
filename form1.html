@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>form</title>
+</head>
+<body>
+    <h1>폼 태그</h1>
+    <!-- id, class 명칭은 = css, js 동적프로그래밍등에 사용 -->
+    <!-- from의 양식들을 구분하기 위해 이름을 적을 때는 action주소로 전송되는 개념의 서버와 연관되는 속성명을 작성해야한다. -->
+    <!-- form의 value개념 -->
+    <!-- 
+        values는 input의 초기값 개념으로 사용한다.
+        value는 로그인시 '아이디 저장' 또는 '자동 로그인' 설정 시 저장되는 값으로도 인식한다.
+        value는 사용자가 input에 직접 값을 입력시 사용자의 입력값을 인식하는 속성으로도 사용한다.
+        ex) 사용자가 아이디칸에 abc 라고 쓴 경우
+        => 아이디의 'abc' value가 action 서버의 저장값과 일치하는가?
+        => 로그인 성공 또는 실패 결과 도출
+    -->
+    <!-- value의 상황 해설하기 -->
+    <!-- 답)
+            사용자가 블로그 검색창에 'vs'라고 검색 후 버튼을 눌렀다. 그 결과로 form은 사용자가 입력한 'vs' value를 action에 전송하여
+            그에 관련한 검색 결과를 화면에 출력하였다.
+    -->
+    <form action="#" method="get" id="searchFrm">
+        <fieldset>
+            <legend>검색양식</legend>
+            <input type="search" placeholder="검색어를 입력하세요." name="search_txt" class="search_txt" autocomplete="on">
+        </fieldset>
+    </form>
+    <h1>폼 태그 연습-2(로그인)</h1>
+    <form action="#" method="post" id="loginFrm">
+        <fieldset>
+            <legend>로그인 양식</legend>
+            <span>아이디 :</span>
+            <input type="text" name="user_id" class="user_id" placeholder="아이디를 입력하세요.">
+            <span>비밀번호 :</span>
+            <input type="password" name="user_pwd" id="user_pwd" placeholder="비밀번호">
+            <span>자동완성</span>
+            <!-- inpu 선택양식의 경우 ->name속성은 그룹명으로 사용한다. -->
+            <!-- inpu 선택양식의 경우 ->value속성은 선택 값 전달용으로 사용한다. -->
+            <label><input type="checkbox" name="auto_complete_chk" value="auto_complete_pwd">아이디</label>
+            <label><input type="checkbox" name="auto_complete_chk" value="auto_complete_pwd">비밀번호</label>
+        </fieldset>
+    </form>
+    <h1>폼 태그 연습-3(회원가입)</h1>
+    <form action="#" method="post" id="join_form" >
+        <fieldset>
+            <legend>회원가입 양식</legend>
+            <span>이름 :</span>
+            <input type="text" name="user_name" class="user_name" placeholder="이름을 입력하세요.">
+            <br>
+            <span>주민등록번호 :</span>
+            <!-- <input type="text" name="user_socialnum" class="user_socialnum" maxlength="6"> -->
+            <input type="text" name="regident_first" class="regident" maxlength="6">
+            <span>-</span>
+            <input type="text" name="regident_last" class="regident" maxlength="1">
+            <input type="text" name="regident_hide" class="regident" maxlength="6" value="******" readonly>
+            <!-- <input type="password" name="user_socialnum1" class="user_socialnum1" maxlength="7"> -->
+            <br>
+            <span>성별 :</span>
+            <label><input type="radio" name="gender" value="male">남</label>
+            <label><input type="radio" name="gender" value="female">여</label>
+            <label><input type="radio" name="gender" value="none">공개안함</label>
+            <br>
+            <span>가입경로</span>
+            <label><input type="radio" name="sub_path" value="recomend">지인추천</label>
+            <label><input type="radio" name="sub_path" value="kidnap">납치</label>
+            <label><input type="radio" name="sub_path" value="SNS">SNS</label>
+            <label><input type="radio" name="sub_path" value="etc">기타</label>
+            <br>
+            <span>사진 업로드(jpg 업로드만 가능합니다.)</span>
+            <input type="file" name="user_photo" accept="image/*">
+            <!-- accept="application/pdf" -->
+            <br>
+            <input type="submit" value="회원가입"> 
+            <!-- 확인, 로그인, 결제 등 서버전송기능 -->
+            <input type="reset" value="가입취소">
+            <!-- 삭제, 취소 등 서버업로드취소기능 -->
+            <input type="button" value="위로 이동">
+            <!-- 범용(스크립트 이용 직접 명령어 지정지 사유로운 사용가능) ex)이전 , 다음 이동, 우편번호검색등 -->
+            <button type="submit" id="btn_join">회원가입</button>
+            <button type="reset" id="btn_cancel">가입취소</button>
+            <button type="button" id="btn_top|">위로 이동</button>
+        </fieldset>
+    </form>
+    <h1>폼 태그 연습-4(설문조사)</h1>
+    <form action="#" method="get" id="survey_form">
+        <fieldset>
+            <legend>설문조사 양식</legend>
+            <span>이름 :</span>
+            <input type="text" name="user_name" class="user_name">
+            <span>나이:(필수입력)</span>
+            <input type="number" required name="survey_age" class="survey_age">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <hr>
+    <form action="#" method="post" id="join_form">
+        <fieldset>
+            <legend>회원가입양식</legend>
+            <!-- 아이디, 패스워드 -->
+            <input type="text" name="user_id" id="user_id" placeholder="아이디를 입력하세요.">
+            <br>
+            <input type="password" name="user_pwd" id="user_pwd" placeholder="비밀번호">
+            <br>
+            <!-- 성별 -->
+            <span>성별 :</span>
+            <label>남<input type="radio" name="gender" id="male"></label>
+            <label>여<input type="radio" name="gender" id="female"></label>
+            <br>
+            <!-- 정보저장동의 -->
+            <span>정보 저장 동의 :</span>
+            <label>동의함<input type="radio" name="save" id="agree"></label>
+            <label>동의안함<input type="radio" name="save" id="disagree"></label>
+            <br>
+            <!-- 관심사 -->
+            <p>관심사<span>(2개 이상 선택하세요)</span></p>
+            <label>영화<input type="radio" name="interest" id="movie"></label>
+            <label>운동<input type="radio" name="interest" id="sports"></label>
+            <label>독서<input type="radio" name="interest" id="book"></label>
+            <br>
+            <!-- 파일첨부 -->
+            <span>첨부파일</span>
+            <input type="file" name="user_file" accept="image/*">
+            <br>
+            <!-- 가입, 가입취소 -->
+            <button type="submit" value="회원가입">가입</button>
+            <button type="reset" value="가입취소">가입취소</button>
+        </fieldset>
+    </form>
+</body>
+</html>
