@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Document</title>
+    <title>회원가입</title>
 </head>
 <body>
     <h1>회원가입</h1>
@@ -25,22 +25,24 @@
             <br>
             <!-- 정보저장동의 -->
             <span>정보 저장 동의 :</span>
-            <label>동의함<input type="radio" name="save" id="agree"></label>
+            <label>동의함<input type="radio=" name="save" id="agree"></label>
             <label>동의안함<input type="radio" name="save" id="disagree"></label>
             <br>
             <!-- 관심사 -->
-            <p>관심사<span>(2개 이상 선택하세요)</span></p>
-            <label>영화<input type="radio" name="interest" id="movie"></label>
-            <label>운동<input type="radio" name="interest" id="sports"></label>
-            <label>독서<input type="radio" name="interest" id="book"></label>
+            <span>관심사<span>(2개 이상 선택하세요)</span></span>
+            <label>영화<input type="checkbox" name="interest" id="movie"></label>
+            <label>운동<input type="checkbox" name="interest" id="sports"></label>
+            <label>독서<input type="checkbox" name="interest" id="book"></label>
             <br>
             <!-- 파일첨부 -->
-            <span>첨부파일</span>
-            <input type="file" name="user_file" accept="image/*">
+            <span>
+                첨부파일
+                <input type="file" name="user_file" accept="image/*" value="userPhoto">
+            </span>
             <br>
             <!-- 가입, 가입취소 -->
-            <button type="submit" value="회원가입">가입</button>
-            <button type="reset" value="가입취소">가입취소</button>
+            <button type="submit" value="joinBtn">가입</button>
+            <button type="reset" value="reserBtn">가입취소</button>
         </fieldset>
     </form>
 </body>
