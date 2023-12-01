@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>quiz</title>
+</head>
+<body>
+    <h1>프런트엔드 개발자 지원서</h1>
+    <p>HTML, CSS, Javascript에 대한 기술적이해와 경험이 있는분을 찾습니다.</p>
+    <form action="#" method="post" class="developer">
+        <fieldset>
+            <legend>프런트엔드 개발자 지원서</legend>
+            <hr>
+            <dl class="developer_info">
+                <dt>개인정보</dt>
+                <dd>
+                    <label>이름 <input type="text" placeholder="공백없이 입력하세요" name="user_Name" class="user_Name"></label><br>
+                    <label>연락처 <input type="tel" name="user_Tel" class="user_Tel"></label>
+                </dd>
+                <dt>지원 분야</dt>
+                <dd>
+                    <label><input type="radio" name="user_job" value="웹 퍼블리싱">웹 퍼블리싱</label><br>
+                    <label><input type="radio" name="user_job" value="웹 애플리케이션 개발">웹 애플리케이션 개발</label><br>
+                    <label><input type="radio" name="user_job" value="개발 환경 개선">개발 환경 개선</label>
+                </dd>
+                <dt>지원 동기</dt>
+                <dd>
+                    <textarea name="user_info" rows="5" cols="60" placeholder="본자시원동기를 간략히 써주세요"></textarea><br>
+                </dd>
+            </dl>
+            <div class="developer_btn">
+                <button type="submit" id="submit_Btn">접수하기</button>
+                <button type="reset" id="reset_Btn">다시쓰기</button>    
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
